@@ -340,14 +340,14 @@ export default function GelonixLandingPage() {
 
             {/* EMAIL */}
             <a
-              href="mailto:gelonixinnovation@gmail.com"
+              href="mailto:info@gelonix.in"
               className="flex items-center gap-3 text-sm text-white/60 transition-colors hover:text-white"
             >
               <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-[#27272a] bg-white/5">
                 <Mail className="h-4 w-4 text-emerald-400" />
               </div>
 
-              <span>gelonixinnovation@gmail.com</span>
+              <span>info@gelonix.in</span>
             </a>
 
             {/* MOBILE */}
