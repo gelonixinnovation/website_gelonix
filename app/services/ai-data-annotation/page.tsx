@@ -128,27 +128,58 @@ export default function AIDataAnnotationPage() {
 
       {/* Navigation */}
       <nav className="border-b border-[#27272a] bg-black/90">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-          <Link href="/" className="flex items-center gap-2">
-            <img
-              src="/logo2.png"
-              alt="Gelonix Innovation"
-              className="h-8 w-auto object-contain"
-            />
-            <span className="text-sm font-bold">
-              Gelonix{" "}
-              <span className="text-white/40">Innovation</span>
-            </span>
-          </Link>
+  <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+    <Link href="/" className="flex items-center gap-2">
+      <img
+        src="/logo2.png"
+        alt="Gelonix Innovation"
+        className="h-8 w-auto object-contain"
+      />
 
-          <Link
-            href="/#contact"
-            className="rounded-full border border-[#27272a] bg-white/5 px-5 py-2 text-sm font-medium transition hover:bg-white/10"
-          >
-            Start a Pilot
-          </Link>
-        </div>
-      </nav>
+      <span className="text-sm font-bold tracking-tight">
+        Gelonix{" "}
+        <span className="text-white/40">Innovation</span>
+      </span>
+    </Link>
+
+    <div className="hidden items-center gap-8 md:flex">
+      <Link
+        href="/"
+        className="text-sm text-white/60 transition-colors hover:text-white"
+      >
+        Home
+      </Link>
+
+      <Link
+        href="/#services"
+        className="text-sm text-white/60 transition-colors hover:text-white"
+      >
+        Services
+      </Link>
+
+      <Link
+        href="/#global"
+        className="text-sm text-white/60 transition-colors hover:text-white"
+      >
+        Global Reach
+      </Link>
+
+      <Link
+        href="/#contact"
+        className="text-sm text-white/60 transition-colors hover:text-white"
+      >
+        Contact
+      </Link>
+    </div>
+
+    <Link
+      href="/#contact"
+      className="rounded-full border border-[#27272a] bg-white/5 px-5 py-2 text-xs font-medium text-white transition-colors hover:border-white/20 hover:bg-white/10"
+    >
+      Start a Pilot
+    </Link>
+  </div>
+</nav>
 
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-[#27272a]">
