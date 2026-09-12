@@ -28,7 +28,7 @@ const services = [
     title: "AI Data Annotation",
     href: "/services/ai-data-annotation",
     description:
-      "AI data annotation services for image, video, text, audio, and document datasets supporting AI and machine learning teams.",
+      "Image, video, text, audio, and document annotation for AI/ML teams building production-grade models.",
     features: [
       "Fast turnaround times",
       "Strict QA processes",
@@ -39,11 +39,13 @@ const services = [
     iconColor: "text-emerald-400",
     iconBg: "bg-emerald-500/10",
   },
+
   {
     icon: FileText,
     title: "Data Operations",
+    href: "/services/data-operations",
     description:
-      "Data operations outsourcing covering data entry, web research, database enrichment, data cleansing, and validation.",
+      "Comprehensive outsourced data entry, web research, and cleansing for teams that need clean, reliable data.",
     features: [
       "Excel/CSV processing",
       "Lead research & generation",
@@ -54,11 +56,13 @@ const services = [
     iconColor: "text-cyan-400",
     iconBg: "bg-cyan-500/10",
   },
+
   {
     icon: BarChart3,
     title: "Market Research",
+    href: "/services/market-research",
     description:
-      "Market research outsourcing and survey fieldwork, including respondent recruitment, data collection, surveys, and fieldwork management.",
+      "End-to-end survey and market research fieldwork, connecting you with respondents globally.",
     features: [
       "B2B/B2C respondent recruitment",
       "Phone & online surveys",
