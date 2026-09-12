@@ -26,6 +26,7 @@ const services = [
   {
     icon: Database,
     title: "AI Data Annotation",
+    href: "/services/ai-data-annotation",
     description:
       "AI data annotation services for image, video, text, audio, and document datasets supporting AI and machine learning teams.",
     features: [
@@ -232,8 +233,9 @@ export default function GelonixLandingPage() {
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             {services.map((service, i) => (
-              <div
+              <a
                 key={i}
+                href={service.href}
                 className={`group relative overflow-hidden rounded-2xl border border-[#27272a] bg-[#0a0a0a] p-8 transition-all duration-300 hover:border-white/20 hover:${service.glowClass}`}
               >
                 <div
@@ -256,7 +258,7 @@ export default function GelonixLandingPage() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </a>
             ))}
           </div>
         </div>
