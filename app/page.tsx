@@ -27,7 +27,7 @@ const services = [
     icon: Database,
     title: "AI Data Annotation",
     description:
-      "Image, video, text, audio, and document annotation for AI/ML teams building production-grade models.",
+      "AI data annotation services for image, video, text, audio, and document datasets supporting AI and machine learning teams.",
     features: [
       "Fast turnaround times",
       "Strict QA processes",
@@ -42,7 +42,7 @@ const services = [
     icon: FileText,
     title: "Data Operations",
     description:
-      "Comprehensive outsourced data entry, web research, and cleansing for teams that need clean, reliable data.",
+      "Data operations outsourcing covering data entry, web research, database enrichment, data cleansing, and validation.",
     features: [
       "Excel/CSV processing",
       "Lead research & generation",
@@ -57,7 +57,7 @@ const services = [
     icon: BarChart3,
     title: "Market Research",
     description:
-      "End-to-end survey and market research fieldwork, connecting you with respondents globally.",
+      "Market research outsourcing and survey fieldwork, including respondent recruitment, data collection, surveys, and fieldwork management.",
     features: [
       "B2B/B2C respondent recruitment",
       "Phone & online surveys",
@@ -158,15 +158,18 @@ export default function GelonixLandingPage() {
               </div>
 
               <h1 className="mb-6 text-center text-4xl font-extrabold tracking-tighter text-white md:text-7xl">
-                Scale Your{" "}
-                <span className="text-gradient-emerald">Data &amp; AI</span>{" "}
-                Operations Globally
-              </h1>
+  Scale Your{" "}
+  <span className="text-gradient-emerald">
+    AI, Data &amp; Research
+  </span>{" "}
+  Operations Globally
+</h1>
               <p className="mx-auto max-w-2xl px-6 text-center text-sm text-white/60 md:text-lg">
-                Gelonix Innovation provides dedicated India-based delivery teams
-                and scalable overflow capacity for your projects in AI, Data, and
-                Research seamlessly integrating with your existing workflow..
-              </p>
+  Gelonix Innovation provides India-based delivery teams for AI data
+  annotation, data operations, and market research. Scale your projects
+  with reliable outsourcing and flexible overflow capacity that integrates
+  seamlessly with your existing workflow.
+</p>
 
               <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <LiquidButton
@@ -217,11 +220,12 @@ export default function GelonixLandingPage() {
               What We Do
             </p>
             <h2 className="mb-4 text-3xl font-bold tracking-tight md:text-5xl">
-              Core Capabilities
+              Core Capabilities:- AI Data, Data Operations &amp; Market Research Services
             </h2>
             <p className="mx-auto max-w-xl text-white/60">
-              End-to-end outsourcing solutions designed for modern AI, ML, and
-              research teams. We handle the heavy lifting so you can focus on
+              End-to-end outsourced delivery teams for AI data annotation, data processing, research support, and market research fieldwork. Gelonix helps global
+              companies scale operations with flexible India-based teams. 
+              We handle the heavy lifting so you can focus on
               building.
             </p>
           </div>
