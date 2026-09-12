@@ -5,9 +5,10 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://gelonix.in'),
   title: 'Gelonix Innovation | Scale Your Data & AI Operations Globally',
   description:
-    'Delhi-based outsourcing and overflow capacity agency. We provide dedicated India-based delivery teams for AI data annotation, data operations, and market research — scaling global teams seamlessly.',
+    'India-based outsourcing and overflow capacity agency. We provide dedicated India-based delivery teams for AI data annotation, data operations, and market research — scaling global teams seamlessly.',
   keywords: [
     'AI data annotation',
     'data operations outsourcing',
