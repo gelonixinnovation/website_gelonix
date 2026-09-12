@@ -87,6 +87,18 @@ export default function RootLayout({
     }),
   }}
 />
+      <Script
+        id="website-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "Gelonix Innovation",
+            url: "https://gelonix.in/",
+          }),
+        }}
+      />
         {children}
       </body>
     </html>
