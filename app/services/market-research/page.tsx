@@ -14,6 +14,8 @@ import {
   Mail,
   Clock,
   ArrowUp,
+  Menu,
+
 } from "lucide-react";
 
 const services = [
@@ -103,68 +105,107 @@ export default function MarketResearchPage() {
     <main className="min-h-screen bg-black text-white">
 
       {/* NAVIGATION */}
-      <nav className="fixed top-0 z-50 w-full border-b border-[#27272a]/50 bg-black/60 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+<nav className="fixed top-0 z-50 w-full border-b border-[#27272a]/50 bg-black/60 backdrop-blur-xl">
+  <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
 
-          {/* LOGO */}
-          <a href="/" className="flex items-center gap-2">
-            <img
-              src="/logo2.png"
-              alt="Gelonix Innovation"
-              className="h-8 w-auto object-contain"
-            />
+    {/* LOGO */}
+    <a href="/" className="flex items-center gap-2">
+      <img
+        src="/logo2.png"
+        alt="Gelonix Innovation"
+        className="h-8 w-auto object-contain"
+      />
 
-            <span className="text-sm font-bold tracking-tight">
-              Gelonix{" "}
-              <span className="text-white/40">
-                Innovation
-              </span>
-            </span>
-          </a>
+      <span className="text-sm font-bold tracking-tight">
+        Gelonix{" "}
+        <span className="text-white/40">
+          Innovation
+        </span>
+      </span>
+    </a>
 
-          {/* NAVIGATION LINKS */}
-          <div className="hidden items-center gap-8 md:flex">
+    {/* DESKTOP NAVIGATION */}
+    <div className="hidden items-center gap-8 md:flex">
 
-            <a
-              href="/"
-              className="text-sm text-white/60 transition-colors hover:text-white"
-            >
-              Home
-            </a>
+      <a
+        href="/"
+        className="text-sm text-white/60 transition-colors hover:text-white"
+      >
+        Home
+      </a>
 
-            <a
-              href="/#services"
-              className="text-sm text-white/60 transition-colors hover:text-white"
-            >
-              Services
-            </a>
+      <a
+        href="/#services"
+        className="text-sm text-white/60 transition-colors hover:text-white"
+      >
+        Services
+      </a>
 
-            <a
-              href="/#global"
-              className="text-sm text-white/60 transition-colors hover:text-white"
-            >
-              Global Reach
-            </a>
+      <a
+        href="/#global"
+        className="text-sm text-white/60 transition-colors hover:text-white"
+      >
+        Global Reach
+      </a>
 
-            <a
-              href="/#contact"
-              className="text-sm text-white/60 transition-colors hover:text-white"
-            >
-              Contact
-            </a>
+      <a
+        href="/#contact"
+        className="text-sm text-white/60 transition-colors hover:text-white"
+      >
+        Contact
+      </a>
 
-          </div>
+    </div>
 
-          {/* START A PILOT */}
-          <a
-            href="/#contact"
-            className="rounded-full border border-[#27272a] bg-white/5 px-5 py-2 text-xs font-medium text-white transition-colors hover:border-white/20 hover:bg-white/10"
-          >
-            Start a Pilot
-          </a>
+    {/* MOBILE MENU */}
+    <details className="relative md:hidden">
+      <summary className="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-full border border-[#27272a] bg-white/5 text-white">
+        <Menu className="h-5 w-5" />
+      </summary>
 
-        </div>
-      </nav>
+      <div className="absolute right-0 top-12 z-50 w-52 rounded-xl border border-[#27272a] bg-black/95 p-3 shadow-xl backdrop-blur-xl">
+
+        <a
+          href="/"
+          className="block rounded-lg px-4 py-3 text-sm text-white/70 hover:bg-white/5 hover:text-white"
+        >
+          Home
+        </a>
+
+        <a
+          href="/#services"
+          className="block rounded-lg px-4 py-3 text-sm text-white/70 hover:bg-white/5 hover:text-white"
+        >
+          Services
+        </a>
+
+        <a
+          href="/#global"
+          className="block rounded-lg px-4 py-3 text-sm text-white/70 hover:bg-white/5 hover:text-white"
+        >
+          Global Reach
+        </a>
+
+        <a
+          href="/#contact"
+          className="block rounded-lg px-4 py-3 text-sm text-white/70 hover:bg-white/5 hover:text-white"
+        >
+          Contact
+        </a>
+
+      </div>
+    </details>
+
+    {/* START A PILOT */}
+    <a
+      href="/#contact"
+      className="rounded-full border border-[#27272a] bg-white/5 px-5 py-2 text-xs font-medium text-white transition-colors hover:border-white/20 hover:bg-white/10"
+    >
+      Start a Pilot
+    </a>
+
+  </div>
+</nav>
         
 
       {/* HERO */}

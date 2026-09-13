@@ -1,9 +1,11 @@
 "use client";
 
+import { useState } from "react";
+
 import { WebGLShader } from "@/components/ui/web-gl-shader";
 import { LiquidButton } from "@/components/ui/liquid-glass-button";
-import { SiWhatsapp } from "react-icons/si";
 import { ContactForm } from "@/components/contact-form";
+import { SiWhatsapp } from "react-icons/si";
 import {
   Database,
   FileText,
@@ -20,9 +22,12 @@ import {
   ArrowUp,
   Phone,
   MessageCircle,
+  Menu,
+  X,
 } from "lucide-react";
 
-const services = [
+
+const services = [ 
   {
     icon: Database,
     title: "AI Data Annotation",
@@ -98,6 +103,7 @@ const scrollToContact = () => {
 };
 
 export default function GelonixLandingPage() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-emerald-500/30">
       {/* NAVIGATION */}
@@ -116,7 +122,7 @@ export default function GelonixLandingPage() {
   </span>
 </div>
           </div>
-          <div className="hidden items-center gap-8 md:flex">
+          <div className="hidden items-center gap-3 md:flex">
             <a
             href="/"
     className="text-sm text-white/60 transition-colors hover:text-white">
@@ -134,13 +140,59 @@ export default function GelonixLandingPage() {
             </a>
           </div>
           <button
-            onClick={scrollToContact}
-            className="rounded-full border border-[#27272a] bg-white/5 px-5 py-2 text-xs font-medium text-white transition-colors hover:border-white/20 hover:bg-white/10"
-          >
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+  className="flex md:hidden items-center justify-center rounded-full border border-[#27272a] bg-white/5 p-2 text-white"
+  aria-label="Toggle mobile menu"
+>
+  {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+</button>
+
+<button
+  onClick={scrollToContact}
+  className="rounded-full border border-[#27272a] bg-white/5 px-5 py-2 text-xs font-medium text-white transition-colors hover:border-white/20 hover:bg-white/10"
+>
             Start a Pilot
           </button>
         </div>
       </nav>
+      {/* MOBILE MENU */}
+      {mobileMenuOpen && (
+        <div className="fixed top-[73px] left-0 z-40 w-full border-b border-[#27272a] bg-black/95 px-6 py-5 backdrop-blur-xl md:hidden">
+          <div className="flex flex-col gap-4">
+            <a
+              href="/"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-sm text-white/80 hover:text-white"
+            >
+              Home
+            </a>
+
+            <a
+              href="#services"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-sm text-white/80 hover:text-white"
+            >
+              Services
+            </a>
+
+            <a
+              href="#global"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-sm text-white/80 hover:text-white"
+            >
+              Global Reach
+            </a>
+
+            <a
+              href="#contact"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-sm text-white/80 hover:text-white"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+      )}
 
       {/* HERO SECTION */}
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden pt-32 pb-16">

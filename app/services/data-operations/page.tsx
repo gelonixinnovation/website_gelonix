@@ -7,6 +7,7 @@ import {
   Search,
   ShieldCheck,
   Zap,
+  Menu,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -158,21 +159,22 @@ export default function DataOperationsPage() {
       />
 
       {/* Navigation */}
-      <nav className="border-b border-[#27272a] bg-black/90">
-  <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+<nav className="border-b border-[#27272a] bg-black/90">
+  <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+
+    {/* Logo */}
     <Link href="/" className="flex items-center gap-2">
       <img
         src="/logo2.png"
         alt="Gelonix Innovation"
         className="h-8 w-auto object-contain"
       />
-
       <span className="text-sm font-bold tracking-tight">
-        Gelonix{" "}
-        <span className="text-white/40">Innovation</span>
+        Gelonix <span className="text-white/40">Innovation</span>
       </span>
     </Link>
 
+    {/* Desktop Navigation */}
     <div className="hidden items-center gap-8 md:flex">
       <Link
         href="/"
@@ -203,12 +205,53 @@ export default function DataOperationsPage() {
       </Link>
     </div>
 
+    {/* Mobile Menu */}
+    <details className="relative md:hidden">
+      <summary className="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-full border border-[#27272a] bg-white/5 text-white">
+        <Menu className="h-5 w-5" />
+      </summary>
+
+      <div className="absolute right-0 top-12 z-50 w-52 rounded-xl border border-[#27272a] bg-black/95 p-3 shadow-xl backdrop-blur-xl">
+
+        <Link
+          href="/"
+          className="block rounded-lg px-4 py-3 text-sm text-white/70 hover:bg-white/5 hover:text-white"
+        >
+          Home
+        </Link>
+
+        <Link
+          href="/#services"
+          className="block rounded-lg px-4 py-3 text-sm text-white/70 hover:bg-white/5 hover:text-white"
+        >
+          Services
+        </Link>
+
+        <Link
+          href="/#global"
+          className="block rounded-lg px-4 py-3 text-sm text-white/70 hover:bg-white/5 hover:text-white"
+        >
+          Global Reach
+        </Link>
+
+        <Link
+          href="/#contact"
+          className="block rounded-lg px-4 py-3 text-sm text-white/70 hover:bg-white/5 hover:text-white"
+        >
+          Contact
+        </Link>
+
+      </div>
+    </details>
+
+    {/* Start a Pilot */}
     <Link
       href="/#contact"
       className="rounded-full border border-[#27272a] bg-white/5 px-5 py-2 text-xs font-medium text-white transition-colors hover:border-white/20 hover:bg-white/10"
     >
       Start a Pilot
     </Link>
+
   </div>
 </nav>
 
