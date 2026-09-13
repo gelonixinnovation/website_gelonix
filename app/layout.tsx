@@ -28,7 +28,9 @@ export const metadata: Metadata = {
     'Gelonix Innovation',
     'Gelonix',
   ],
-
+  other: {
+    "impact-site-verification": "954bebea-48c6-4716-af89-565fb68b3e5b",
+  },
   alternates: {
     canonical: '/',
   },
@@ -77,6 +79,7 @@ export default function RootLayout({
       name: 'Gelonix Innovation',
       url: 'https://gelonix.in/',
       logo: 'https://gelonix.in/logo2.png',
+      alternateName: "Gelonix",
       email: 'info@gelonix.in',
       telephone: '+91 93110 93599',
       address: {

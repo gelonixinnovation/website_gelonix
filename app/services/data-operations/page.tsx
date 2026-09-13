@@ -12,7 +12,7 @@ import {
 export const metadata: Metadata = {
   title: "Data Operations Outsourcing Services | Gelonix Innovation",
   description:
-    "Reliable data operations outsourcing for data entry, web research, database enrichment, data cleansing, and validation. Scale your operations with India-based delivery teams.",
+    "Reliable data operations outsourcing for data entry, web research, database enrichment, data cleansing, and validation. Scale your operations with India-based delivery teams.",  
   keywords: [
     "data operations outsourcing",
     "data operations services",
